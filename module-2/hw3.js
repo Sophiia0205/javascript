@@ -1,11 +1,8 @@
 'use strict';
-const formatString = function(string) {
-  const array = string.split('');
-  let stringOfArray;
+const formatString = function (string) {
   let newString;
-  if (array.length > 40) {
-    stringOfArray = array.join('');
-    newString = stringOfArray.slice(0, 41) + '...';
+  if (string.length > 40) {
+    newString = string.slice (0, 41) + '...';
   } else {
     newString = string;
   }
@@ -15,17 +12,19 @@ const formatString = function(string) {
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
-console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
+console.log (formatString ('Curabitur ligula sapien, tincidunt non.'));
 // вернется оригинальная строка
 
-console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
+console.log (
+  formatString ('Vestibulum facilisis, purus nec pulvinar iaculis.')
+);
 // вернется форматированная строка
 
-console.log(formatString('Curabitur ligula sapien.'));
+console.log (formatString ('Curabitur ligula sapien.'));
 // вернется оригинальная строка
 
-console.log(
-  formatString(
+console.log (
+  formatString (
     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.'
   )
 );
