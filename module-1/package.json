@@ -1,0 +1,11 @@
+{
+  "name": "module-1",
+  "version": "1.0.0",
+  "description": "first module",
+  "main": "hw.js",
+  "scripts": {
+    "start": "node hw.js && node hw2.js"
+  },
+  "author": "sophiia khramchenko",
+  "license": "ISC"
+}
